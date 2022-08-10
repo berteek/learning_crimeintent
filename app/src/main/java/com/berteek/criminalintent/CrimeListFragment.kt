@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.berteek.criminalintent.databinding.FragmentCrimeDetailBinding
 import com.berteek.criminalintent.databinding.FragmentCrimeListBinding
 
@@ -32,6 +33,9 @@ class CrimeListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentCrimeListBinding.inflate(layoutInflater, container, false)
+
+        binding.crimeRecyclerView.layoutManager = LinearLayoutManager(context)
+
         return binding.root
     }
 
