@@ -1,13 +1,13 @@
 package com.berteek.criminalintent
 
 import androidx.fragment.app.testing.FragmentScenario
-import androidx.fragment.app.testing.launchFragment
 import androidx.fragment.app.testing.launchFragmentInContainer
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.click
 import androidx.test.espresso.action.ViewActions.typeText
 import androidx.test.espresso.matcher.ViewMatchers.withId
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import com.berteek.criminalintent.crime_details.CrimeDetailFragment
 import org.junit.Assert.*
 
 import org.junit.After

@@ -1,6 +1,7 @@
-package com.berteek.criminalintent
+package com.berteek.criminalintent.crime_list
 
 import androidx.lifecycle.ViewModel
+import com.berteek.criminalintent.Crime
 import java.util.*
 
 class CrimeListViewModel : ViewModel() {
@@ -13,7 +14,8 @@ class CrimeListViewModel : ViewModel() {
                 id = UUID.randomUUID(),
                 title = "Crime #$i",
                 date = Date(),
-                isSolved = i % 2 == 0
+                isSolved = i % 2 == 0,
+                requiresPolice = i % 3 == 0
             )
             crimes.add(crime)
         }

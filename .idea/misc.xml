@@ -3,10 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Albert/AndroidStudioProjects/CriminalIntent/app/src/main/res/drawable/call_police.xml" value="0.175" />
         <entry key="..\:/Users/Albert/AndroidStudioProjects/CriminalIntent/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Albert/AndroidStudioProjects/CriminalIntent/app/src/main/res/layout/fragment_crime_detail.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Albert/AndroidStudioProjects/CriminalIntent/app/src/main/res/layout/fragment_crime_list.xml" value="0.153125" />
         <entry key="..\:/Users/Albert/AndroidStudioProjects/CriminalIntent/app/src/main/res/layout/list_item_crime.xml" value="0.1" />
+        <entry key="..\:/Users/Albert/AndroidStudioProjects/CriminalIntent/app/src/main/res/layout/list_item_mild_crime.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Albert/AndroidStudioProjects/CriminalIntent/app/src/main/res/layout/list_item_serious_crime.xml" value="0.22" />
       </map>
     </option>
   </component>

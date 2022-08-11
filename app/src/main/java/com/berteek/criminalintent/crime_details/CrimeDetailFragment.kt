@@ -1,4 +1,4 @@
-package com.berteek.criminalintent
+package com.berteek.criminalintent.crime_details
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.widget.doOnTextChanged
 import androidx.fragment.app.Fragment
+import com.berteek.criminalintent.Crime
 import com.berteek.criminalintent.databinding.FragmentCrimeDetailBinding
 import java.util.*
 
@@ -26,7 +27,8 @@ class CrimeDetailFragment : Fragment() {
             id = UUID.randomUUID(),
             title = "",
             date = Date(),
-            isSolved = false
+            isSolved = false,
+            requiresPolice = true
         )
     }
 

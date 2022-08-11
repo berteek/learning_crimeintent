@@ -1,4 +1,4 @@
-package com.berteek.criminalintent
+package com.berteek.criminalintent.crime_list
 
 import android.os.Bundle
 import android.util.Log
@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.berteek.criminalintent.databinding.FragmentCrimeDetailBinding
+import com.berteek.criminalintent.R
 import com.berteek.criminalintent.databinding.FragmentCrimeListBinding
+import com.google.android.material.snackbar.Snackbar
 
 class CrimeListFragment : Fragment() {
 
@@ -35,6 +36,15 @@ class CrimeListFragment : Fragment() {
         _binding = FragmentCrimeListBinding.inflate(layoutInflater, container, false)
 
         binding.crimeRecyclerView.layoutManager = LinearLayoutManager(context)
+
+        val onCallPoliceListener : (View) -> Unit = { _ ->
+            Snackbar.make(
+                binding.root,
+                R.string.calling_police_message,
+                Snackbar.LENGTH_SHORT
+            ).show()
+        }
+        binding.crimeRecyclerView.adapter = CrimeListAdapter(viewModel.crimes, onCallPoliceListener)
 
         return binding.root
     }
